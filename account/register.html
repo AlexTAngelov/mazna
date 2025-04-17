@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Motob</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="signup">
+        <div class="container">
+            <div class="title">
+                <h3>Create an Account</h3>
+            </div>
+            <form id="registerForm">
+                <div class="inputs">
+                    <div class="inputBx">
+                        <input type="text" id="fullName" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="email" id="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" id="confirmPassword" required>
+                        <label>Confirm Password</label>
+                    </div>
+                </div>
+                <div class="checkBx">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="submit">
+                    <button type="submit">Register Now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </form>
+            <div class="social-log">
+                <p>Or Register With</p>
+                <div class="social">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="/account/login.html">Login Now</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            // Validate passwords match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            // Here you would typically send this data to your backend
+            console.log('Registration attempt:', { fullName, email, password });
+            
+            // For demo purposes, we'll just show an alert
+            alert('Registration successful!');
+            window.location.href = '/account/dashboard.html';
+        });
+
+        // Social registration handlers
+        document.querySelectorAll('.social i').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const platform = icon.classList[1].split('-')[1];
+                alert(`Registering with ${platform}...`);
+            });
+        });
+    </script>
+</body>
+</html> 

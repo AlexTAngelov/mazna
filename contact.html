@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title -->
+    <title>Motob - Car Selling Website Template</title>
+    <!--- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--- customer css file ----->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--- boxicon cdn link ----->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+        <!--- top header section start ---->
+        <div class="top-header">
+            <div class="out-box">
+                <div class="inside-box">
+                    <div class="col-1">
+                        <span><i class='bx bxs-envelope'></i>alexneshto@gmail.com</span>
+                        <span><i class='bx bxs-phone-call'></i>+2 123 654 7898</span>
+                        <span><i class='bx bxs-alarm' ></i>Sun - Fri (08 AM - 10 PM)</span>
+                    </div>
+                    <div class="col-2">
+                        <a href="#"><i class='bx bx-arrow-to-right'></i>Login</a>
+                        <a href="#"><i class='bx bxs-user' ></i>Register</a>
+                        <span>Follow Us:</span>
+                        <div class="social">
+                            <i class='bx bxl-facebook' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-instagram' ></i>
+                            <i class='bx bxl-linkedin' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- navbar section start ---->
+        <header class="header">
+            <div class="logo">
+                <img src="/img/logo/logo.png" alt="">
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#">Inventory<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="/inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="/inventory_list.html">Inventory List</a></li>
+                                <li><a href="/inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="/listing_grid.html">Listing Grid</a></li>
+                                        <li><a href="/listing_list.html">Listing List</a></li>
+                                        <li><a href="/listing_single.html">Listing Single</a></li>
+                                        <li><a href="/compare.html">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">My Account<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="/account/dashboard.html">Dashboard</a></li>
+                                        <li><a href="/account/profile.html">My Profile</a></li>
+                                        <li><a href="/account/listing.html">My Listing</a></li>
+                                        <li><a href="/account/addListing.html">Add Listing</a></li>
+                                        <li><a href="/account/favorites.html">My Favourites</a></li>
+                                        <li><a href="/account/messages.html">Message</a></li>
+                                        <li><a href="/account/settings.html">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="/account/login.html">Login</a></li>
+                                        <li><a href="/account/register.html">Register</a></li>
+                                        <li><a href="/account/forgot.html">Forgot Password</a></li> 
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="/services.html">Services</a></li>
+                                        <li><a href="/service_single.html">Service Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="/dealer.html">Dealer</a></li>
+                                        <li><a href="/dealer_single.html">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/extra_pages.html">Extra Pages</a></li>
+                                <li><a href="/team.html">Our Team</a></li>
+                                <li><a href="/pricing.html">Pricing Plan</a></li>
+                                <li><a href="/calculator.html">Calculator</a></li>
+                                <li><a href="/faq.html">FAQ</a></li>
+                                <li><a href="/testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="/shop/shop.html">Shop</a></li>
+                                <li><a href="/shop/cart.html">Shop Cart</a></li>
+                                <li><a href="/shop/checkout.html">Shop Checkout</a></li>
+                                <li><a href="/shop/single.html">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="others">
+                    <i class='bx bx-search'></i>
+                    <i class='bx bx-cart-download cart' ></i>
+                    <button class="addBtn"><i class='bx bx-plus-circle' ></i>Add Listing</button>
+                    <i class='bx bx-menu-alt-left' id="menuBar"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Our Team section start -->
+        <div class="inventory">
+            <h2>Contact Us</h2>
+            <div class="link">
+                <a href="/index.html">Home</a>
+                <span>>>></span>
+                <p>Contact Us</p>
+            </div>
+        </div>    
+
+        <!--- contact section start -->
+        <div class="contact">
+            <div class="contact-row">
+                <div class="contact-col">
+                    <img src="/img/contact/c-1.JPG" alt="">
+                    <h6>Office Address</h6>
+                    <p>25/B Milford, New York, USA</p>
+                </div>
+                <div class="contact-col">
+                    <img src="/img/contact/c-2.JPG" alt="">
+                    <h6>Call Us</h6>
+                    <p>25/B Milford, New York, USA</p>
+                </div>
+                <div class="contact-col">
+                    <img src="/img/contact/c-3.JPG" alt="">
+                    <h6>Email Us</h6>
+                    <p>25/B Milford, New York, USA</p>
+                </div>
+                <div class="contact-col">
+                    <img src="/img/contact/c-4.JPG" alt="">
+                    <h6>Open Time</h6>
+                    <p>25/B Milford, New York, USA</p>
+                </div>
+            </div>
+
+            <div class="touch-row">
+                <div class="touch-col">
+                    <img src="/img/contact/c-t.jpg" alt="">
+                </div>
+                <div class="touch-col">
+                    <h5>Get In Touch</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio in iusto modi ad suscipit aspernatur.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio in iusto modi ad suscipit aspernatur.
+                    </p>
+                    <div class="box">
+                        <div class="inputBx">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="inputBx">
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="inputBx">
+                        <input type="text" placeholder="Your Subject">
+                    </div>
+                    <textarea cols="30" rows="5" placeholder="Write Your Message"></textarea>
+
+                    <button>Send Message <i class="bx bxl-telegram"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--- footer section start -->
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <img src="/img/logo/logo-light.png" alt="">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugiat ea a.</p>
+                    <span><i class='bx bx-phone' ></i>+2 123 654 7898</span>
+                    <span><i class='bx bx-location-plus' ></i>25/B Milford Road, New York</span>
+                    <span><i class='bx bx-envelope' ></i>alexangelov964@gmail.com</span>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>About Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Update News</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Testimonials</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Terms Of Service</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Privacy policy</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Our Dealers</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support Center</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>FAQ's</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Affiliates</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Booking Tips</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sell Vehicles</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Contact Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sitemap</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe Now <i class='bx bxl-telegram' ></i></button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+                <div class="social">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-linkedin"></i>
+                    <i class="bx bxl-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--- swiper js link -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!--- custom script file -->
+        <script src="./js/script.js"></script>
+
+    
+</body>
+</html>

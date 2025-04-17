@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Motob</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="forgot">
+        <div class="container">
+            <h2>Forgot Password</h2>
+            <p>Enter your email address and we'll send you a link to reset your password.</p>
+            <form id="forgotForm">
+                <div class="inputBx">
+                    <input type="email" id="email" required>
+                    <label>Email Address</label>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <button type="submit">Send Reset Link</button>
+            </form>
+            <div class="btn">
+                <a href="/account/login.html"><i class='bx bx-arrow-back'></i> Back to Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('forgotForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            
+            // Here you would typically send this data to your backend
+            console.log('Password reset requested for:', email);
+            
+            // For demo purposes, we'll just show an alert
+            alert('Password reset link has been sent to your email!');
+            window.location.href = '/account/login.html';
+        });
+    </script>
+</body>
+</html> 

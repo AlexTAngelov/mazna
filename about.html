@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title -->
+    <title>Motob - Car Selling Website Template</title>
+    <!--- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--- customer css file ----->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--- boxicon cdn link ----->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+        <!--- top header section start ---->
+        <div class="top-header">
+            <div class="out-box">
+                <div class="inside-box">
+                    <div class="col-1">
+                        <span><i class='bx bxs-envelope'></i>info@gmail.com</span>
+                        <span><i class='bx bxs-phone-call'></i>+2 123 654 7898</span>
+                        <span><i class='bx bxs-alarm' ></i>Sun - Fri (08 AM - 10 PM)</span>
+                    </div>
+                    <div class="col-2">
+                        <a href="#"><i class='bx bx-arrow-to-right'></i>Login</a>
+                        <a href="#"><i class='bx bxs-user' ></i>Register</a>
+                        <span>Follow Us:</span>
+                        <div class="social">
+                            <i class='bx bxl-facebook' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-instagram' ></i>
+                            <i class='bx bxl-linkedin' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- navbar section start ---->
+        <header class="header">
+            <div class="logo">
+                <img src="./img/logo/logo.png" alt="">
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="./index.html" >Home</a></li>
+                        <li><a href="/about.html" class="active">About</a></li>
+                        <li><a href="#">Inventory<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="./inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="./inventory_list.html">Inventory List</a></li>
+                                <li><a href="./inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="/listing_grid.html">Listing Grid</a></li>
+                                        <li><a href="/listing_list.html">Listing List</a></li>
+                                        <li><a href="/listing_single.html">Listing Single</a></li>
+                                        <li><a href="/compare.html">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">My Account<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="/account/dashboard.html">Dashboard</a></li>
+                                        <li><a href="/account/profile.html">My Profile</a></li>
+                                        <li><a href="/account/listing.html">My Listing</a></li>
+                                        <li><a href="/account/addListing.html">Add Listing</a></li>
+                                        <li><a href="/account/favorites.html">My Favourites</a></li>
+                                        <li><a href="/account/messages.html">Message</a></li>
+                                        <li><a href="/account/settings.html">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="/account/login.html">Login</a></li>
+                                        <li><a href="/account/register.html">Register</a></li>
+                                        <li><a href="/account/forgot.html">Forgot Password</a></li> 
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="/services.html">Services</a></li>
+                                        <li><a href="/service_single.html">Service Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="/dealer.html">Dealer</a></li>
+                                        <li><a href="/dealer_single.html">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/extra_pages.html">Extra Pages</a></li>
+                                <li><a href="/team.html">Our Team</a></li>
+                                <li><a href="/pricing.html">Pricing Plan</a></li>
+                                <li><a href="/calculator.html">Calculator</a></li>
+                                <li><a href="/faq.html">FAQ</a></li>
+                                <li><a href="/testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Shop Cart</a></li>
+                                <li><a href="#">Shop Checkout</a></li>
+                                <li><a href="#">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="others">
+                    <i class='bx bx-search'></i>
+                    <i class='bx bx-cart-download cart' ></i>
+                    <button class="addBtn"><i class='bx bx-plus-circle' ></i>Add Listing</button>
+                    <i class='bx bx-menu-alt-left' id="menuBar"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ABOUT PAGE section start -->
+        <div class="inventory">
+            <h2>About Us</h2>
+            <div class="link">
+                <a href="./index.html">Home</a>
+                <span>>>></span>
+                <p>About Us</p>
+            </div>
+        </div>    
+
+        <!--- market section start -->
+        <section class="market" style="padding-top: 6rem;">
+            <div class="col-3">
+                <img class="one" src="./img/market/01.png" alt="">
+                <div class="service">
+                    <img class="two" src="./img/market/2.JPG" alt="">
+                    <span>30 years of <br> quality service</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4><i class='bx bx-car'></i>About Us</h4>
+                <h3>World Largest <span>Car <br> Dealer</span> Marketplace.</h3>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem est doloremque consequatur modi ab ut ipsa cupiditate ipsum ipsam autem.</p>
+
+                <p class="p1"><i class='bx bx-last-page' ></i>Lorem ipsum dolor sit amet.</p>
+                <p class="p1"><i class='bx bx-last-page' ></i>Lorem ipsum dolor sit amet.</p>
+                <p class="p1"><i class='bx bx-last-page' ></i>Lorem ipsum dolor sit amet.</p>
+
+                <button>Discover More<i class='bx bx-right-arrow-alt' ></i></button>
+            </div>
+        </section>
+
+        <!--- count section start -->
+        <div class="counter">
+            <div class="container">
+                <img src="./img/icons/1.JPG" alt="">
+                <span class="num" data-value="500">000</span>
+                <span class="text"><i class='bx bx-plus' ></i>Available Cars</span>
+            </div>
+            <div class="container">
+                <img src="./img/icons/2.JPG" alt="">
+                <span class="num" data-value="900">000</span>
+                <span class="text"><i class='bx bx-plus' ></i>Happy Clients</span>
+            </div>
+            <div class="container">
+                <img src="./img/icons/3.JPG" alt="">
+                <span class="num" data-value="1500">000</span>
+                <span class="text"><i class='bx bx-plus' ></i>Team Workers</span>
+            </div>
+            <div class="container">
+                <img src="./img/icons/4.JPG" alt="">
+                <span class="num" data-value="30">000</span>
+                <span class="text"><i class='bx bx-plus' ></i>Years Of Experience</span>
+            </div>
+        </div>
+
+        <!--- team section start -->
+        
+
+        <!--- brand section start -->
+        <section class="brand">
+            <h4><i class='bx bx-car' ></i>Car Dealers</h4>
+            <h1>Our Top Quality <span>Brand</span></h1>
+
+            <div class="brand-row">
+                <div class="brand-col">
+                    <img src="./img/brand/01.png" alt="">
+                    <h5>Ferrari</h5>
+                </div>
+                <div class="brand-col">
+                    <img src="./img/brand/02.png" alt="">
+                    <h5>Hyundari</h5>
+                </div>
+                <div class="brand-col">
+                    <img src="./img/brand/03.png" alt="">
+                    <h5>Mercedes Benz</h5>
+                </div>
+                <div class="brand-col">
+                    <img src="./img/brand/04.png" alt="">
+                    <h5>Toyota</h5>
+                </div>
+                <div class="brand-col">
+                    <img src="./img/brand/05.png" alt="">
+                    <h5>BMW</h5>
+                </div>
+                <div class="brand-col">
+                    <img src="./img/brand/06.png" alt="">
+                    <h5>Nissan</h5>
+                </div>
+            </div>
+        </section>
+
+        <!--- client section start -->
+        <section class="client">
+            <h4><i class='bx bx-car' ></i>Testimonials</h4>
+            <h1>What Our Client <span>Say's</span></h1>
+
+            <div class="swiper myClient">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide">
+                        <img src="./img/client/01.jpg" alt="">
+                        <h5>Gardo Novak</h5>
+                        <span>Customer</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo velit vero accusamus, labore libero suscipit.</p>
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                        </div>
+                  </div>
+                  <div class="swiper-slide slide">
+                        <img src="./img/client/02.jpg" alt="">
+                        <h5>Gardo Novak</h5>
+                        <span>Customer</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo velit vero accusamus, labore libero suscipit.</p>
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                        </div>
+                  </div>
+                  <div class="swiper-slide slide">
+                        <img src="./img/client/03.jpg" alt="">
+                        <h5>Gardo Novak</h5>
+                        <span>Customer</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo velit vero accusamus, labore libero suscipit.</p>
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                        </div>  
+                  </div>
+                  <div class="swiper-slide slide">
+                        <img src="./img/client/04.jpg" alt="">
+                        <h5>Gardo Novak</h5>
+                        <span>Customer</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo velit vero accusamus, labore libero suscipit.</p>
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                        </div>
+                  </div>
+                  <div class="swiper-slide slide">
+                        <img src="./img/client/05.jpg" alt="">
+                        <h5>Gardo Novak</h5>
+                        <span>Customer</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo velit vero accusamus, labore libero suscipit.</p>
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star-half"></i>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </section>   
+
+        <!--- footer section start -->
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <img src="./img/logo/logo-light.png" alt="">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugiat ea a.</p>
+                    <span><i class='bx bx-phone' ></i>+2 123 654 7898</span>
+                    <span><i class='bx bx-location-plus' ></i>25/B Milford Road, New York</span>
+                    <span><i class='bx bx-envelope' ></i>alexangelov964@gmail.com</span>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>About Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Update News</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Testimonials</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Terms Of Service</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Privacy policy</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Our Dealers</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support Center</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>FAQ's</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Affiliates</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Booking Tips</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sell Vehicles</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Contact Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sitemap</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe Now <i class='bx bxl-telegram' ></i></button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+                <div class="social">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-linkedin"></i>
+                    <i class="bx bxl-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--- swiper js link -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!--- custom script file -->
+        <script src="./js/script.js"></script>
+
+    
+</body>
+</html>

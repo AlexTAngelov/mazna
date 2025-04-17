@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---- title -->
+    <title>Motob - Car Selling Website Template</title>
+    <!--- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--- customer css file ----->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--- boxicon cdn link ----->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+        <!--- top header section start ---->
+        <div class="top-header">
+            <div class="out-box">
+                <div class="inside-box">
+                    <div class="col-1">
+                        <span><i class='bx bxs-envelope'></i>alexangelov964@gmail.com</span>
+                        <span><i class='bx bxs-phone-call'></i>+2 123 654 7898</span>
+                        <span><i class='bx bxs-alarm' ></i>Sun - Fri (08 AM - 10 PM)</span>
+                    </div>
+                    <div class="col-2">
+                        <a href="#"><i class='bx bx-arrow-to-right'></i>Login</a>
+                        <a href="#"><i class='bx bxs-user' ></i>Register</a>
+                        <span>Follow Us:</span>
+                        <div class="social">
+                            <i class='bx bxl-facebook' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-instagram' ></i>
+                            <i class='bx bxl-linkedin' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- navbar section start ---->
+        <header class="header">
+            <div class="logo">
+                <img src="./img/logo/logo.png" alt="">
+            </div>
+            <nav>
+                <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Inventory<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="./inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="./inventory_list.html">Inventory List</a></li>
+                                <li><a href="./inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">My Account<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Listing</a></li>
+                                        <li><a href="#">Add Listing</a></li>
+                                        <li><a href="#">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li> 
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Service Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer <i class='bx bx-chevron-right chev' ></i></a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a>
+                            <ul class="drop-down">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Shop Cart</a></li>
+                                <li><a href="#">Shop Checkout</a></li>
+                                <li><a href="#">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="others">
+                    <i class='bx bx-search'></i>
+                    <i class='bx bx-cart-download cart' ></i>
+                    <button class="addBtn"><i class='bx bx-plus-circle' ></i>Add Listing</button>
+                    <i class='bx bx-menu-alt-left' id="menuBar"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--- inventory Single section start -->
+        <div class="inventory">
+            <h2>Inventory Single</h2>
+            <div class="link">
+                <a href="./index.html">Home</a>
+                <span>>>></span>
+                <p>Inventory Single</p>
+            </div>
+        </div>
+
+        <!--- inventory slides -->
+        <section class="slider">
+            <div class="slider_one">
+                <div class="col-1">
+                    <h6>brand new</h6>
+                    <h5>mercedes Benz Car</h5>
+                    <div class="date">
+                        <span><i class='bx bx-alarm'></i>Listed On Sat, Oct 02 2023</span>
+                        <span><i class='bx bx-show'></i>Views:850</span>
+                    </div>
+
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper myInvent2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-3.jpg" />
+                            </div> 
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-4.jpg" />
+                            </div> 
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                   </div>
+                   <div thumbsSlider="" class="swiper myInvent1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-3.jpg" />
+                            </div> 
+                            <div class="swiper-slide">
+                                <img src="./img/invectory/single-4.jpg" />
+                            </div> 
+                        </div>
+                   </div>
+                </div>
+                <div class="col-1">
+                    <h5>Key Information</h5>
+
+                    <div class="key-row">
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>body type</span>
+                                <p>Coupe</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>Condition</span>
+                                <p>Brand New</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class='bx bx-stopwatch'></i>
+                            <div class="name">
+                                <span>Mileage</span>
+                                <p>50,000 (MI)</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class='bx bxs-brightness'></i>
+                            <div class="name">
+                                <span>Transmission</span>
+                                <p>Autometic</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>year</span>
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class='bx bx-sidebar'></i>
+                            <div class="name">
+                                <span>fuel type</span>
+                                <p>diesel</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>color</span>
+                                <p>red</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>doors</span>
+                                <p>2 doores</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>cylinders</span>
+                                <p>05</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>engine size</span>
+                                <p>2000 (cc)</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <i class="bx bx-car"></i>
+                            <div class="name">
+                                <span>VIN</span>
+                                <p>532GAFDSUY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1">
+                    <h5>Description</h5>
+                    <p class="dec">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam at labore dolorum nam quasi animi dolores. Eveniet adipisci earum facere optio, cum ducimus? Nesciunt labore eum minima quae non provident.</p>
+                    <p class="dec">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam at labore dolorum nam quasi animi dolores. Eveniet adipisci earum facere optio, cum ducimus? Nesciunt labore eum minima quae non provident.</p>
+
+                    <h5>Car Features</h5>
+                    <div class="features">
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem, ipsum dolor.</p>
+                    </div>
+
+                    <h5>Vehicle History</h5>
+                    <div class="history">
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        <p class="fe"><i class='bx bx-check-shield'></i>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                 
+            </div>
+            <div class="slider_two">
+                <div class="col-2">
+                    <h3>$50,560</h3>
+                    <div class="location">
+                        <span><i class='bx bx-stopwatch' ></i>50k Miles</span>
+                        <span><i class='bx bx-location-plus' ></i>25/B Milford, New York</span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="customer">
+                        <img src="./img/invectory/com-1.jpg" alt="">
+                        <div class="details">
+                            <h6>Marid Anderson</h6>
+                            <span>Customer Advisor</span>
+                            <i class="bx bxl-facebook"></i>
+                            <i class="bx bxl-instagram"></i>
+                            <i class="bx bxl-twitter"></i>
+                            <i class="bx bxl-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h6>Contact Details</h6>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea cols="30" rows="6" placeholder="Write Message"></textarea>
+
+                    <button>Send Now<i class='bx bx-right-arrow-alt' ></i></button>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <!--- footer section start -->
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <img src="./img/logo/logo-light.png" alt="">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugiat ea a.</p>
+                    <span><i class='bx bx-phone' ></i>+2 123 654 7898</span>
+                    <span><i class='bx bx-location-plus' ></i>25/B Milford Road, New York</span>
+                    <span><i class='bx bx-envelope' ></i>alexangelov964@gmail.com</span>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>About Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Update News</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Testimonials</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Terms Of Service</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Privacy policy</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Our Dealers</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Support Center</h5>
+                    <a href="#"><i class='bx bx-chevron-right'></i>FAQ's</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Affiliates</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Booking Tips</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sell Vehicles</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Contact Us</a>
+                    <a href="#"><i class='bx bx-chevron-right'></i>Sitemap</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Newsletter</h5>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe Now <i class='bx bxl-telegram' ></i></button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+                <div class="social">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-linkedin"></i>
+                    <i class="bx bxl-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--- swiper js link -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!--- custom script file -->
+        <script src="./js/script.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Motob</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="title">
+                <h3>Login to Your Account</h3>
+            </div>
+            <form id="loginForm">
+                <div class="inputs">
+                    <div class="inputBx">
+                        <input type="email" id="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="forgot">
+                    <a href="/account/forgot.html">Forgot Password?</a>
+                </div>
+                <div class="submit">
+                    <button type="submit">Login Now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </form>
+            <div class="social-log">
+                <p>Or Login With</p>
+                <div class="social">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+            </div>
+            <div class="register-link">
+                <p>Don't have an account? <a href="/account/register.html">Register Now</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Here you would typically send this data to your backend
+            console.log('Login attempt:', { email, password });
+            
+            // For demo purposes, we'll just show an alert
+            alert('Login successful!');
+            window.location.href = '/account/dashboard.html';
+        });
+
+        // Social login handlers
+        document.querySelectorAll('.social i').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const platform = icon.classList[1].split('-')[1];
+                alert(`Logging in with ${platform}...`);
+            });
+        });
+    </script>
+</body>
+</html> 
